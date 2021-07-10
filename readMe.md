@@ -102,4 +102,19 @@ onMoveShouldSetResponder
 3. Process Response
 4. OMDB: Open Movie Database
 
+### XHR callbacks
+
+onload -> when web api succeeds
+onabort -> when xhr.abort() is called
+onerror -> when web api fails
+onloadstart -> as soon as the data returns
+onprogress -> as the data received (total, loaded)
+onloadend -> always called no matter the output (used to assess the output & clean resources)
+onreadystatechange -> general purpose event
+(replaced by loading events, Ready states [UNSET, OPENED, HEADERS_RECEIVED, LOADING, DONE]) // older code style
+ex. (xhr.status == 200 && xhr.readState == xhr.DONE)
+
+### XHR return types
+Text, arraybuffer, blob, document, JSON, DOM String, Streams( MS IE - depricated)
+
 

@@ -30,9 +30,19 @@ export default function App() {
           }
         }} />
 
-        <Stack.Screen name="Home_to_Details" component={DetailsScreen} />
+        <Stack.Screen name="Home_to_Details" component={DetailsScreen} options={
+          ({route}) => ({
+            title: route.params.screenName,
+            headerBackTitleVisible: false
+          })
+        } />
 
-        <Stack.Screen name="Details_to_Details" component={DetailsScreen} />
+        <Stack.Screen name="Details_to_Details" component={DetailsScreen} options={
+          ({route}) => ({
+            title: route.params.screenName,
+            headerBackTitleVisible: false
+          })
+        } />
 
         <Stack.Screen name="BigImageView" component={ImageScreen} />
       </Stack.Navigator>

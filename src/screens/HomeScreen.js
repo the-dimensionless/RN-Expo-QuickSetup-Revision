@@ -9,6 +9,7 @@ const HomeScreen = ({navigation, route}) => {
           <Button
             title="Go to Details"
             onPress={() => navigation.navigate("Home_to_Details", {
+                screenName: "Details Screen",
                 screenNumber: 1
             })}/>
       </View>

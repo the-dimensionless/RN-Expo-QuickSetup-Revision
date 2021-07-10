@@ -16,6 +16,7 @@ const DetailsScreen = ({navigation, route}) => {
             <Button
             title="More Details"
             onPress={() => {navigation.push("Details_to_Details", {
+                screenName: "Details Screen",
                 screenNumber: screenNumber + 1
             })}}/>
             <Button

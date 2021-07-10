@@ -30,3 +30,5 @@
 
 ### Setup Stack Navigation
 1. Keep track of navigation using routes
+2. Path between screens is the route stored in a Route Object
+3. Use Descriptive route names

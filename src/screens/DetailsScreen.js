@@ -1,30 +1,24 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Button, View, Text, StyleSheet, Image } from "react-native";
+import xhrGetRequest from "../utils/xhrRequest";
 
 const DetailsScreen = ({ navigation, route }) => {
   const movie = route.params.movie;
 
   const [movieData, setMovieData] = useState(null);
 
-  useEffect(() => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(
-      "GET",
-      "http://www.omdbapi.com/?apikey=bfc8c4f6&t=Star+Wars&y=1977"
-    );
-    //default async
-    xhr.send(); // separate thread spawned
-
-    // callback to be processed on receiving data
-    xhr.onload = () => {
-      if (xhr.status === 200) {
+  const onLoadCallback = (xhr) => {
+    if (xhr.status === 200) {
         const response = JSON.parse(xhr.responseText);
         setMovieData(response);
       } else {
         console.log("HTTP Request Failed with code", xhr.status);
       }
-    };
+  };
+
+  useEffect(() => {
+    xhrGetRequest(movie.url, onLoadCallback);
   }, []);
 
   const renderMovieData = () => (

@@ -40,3 +40,16 @@
 3. moving to next screen -> Screen pushed onto Stack (new Instance, new key in Route Object)
 4. Does nothing if routing to it's own path like from Details to Details to Details
 5. Can be enforced using navigation.push()
+6. Push keeps adding new instances everytime called, navigate jumps to a screen if already instantiated
+7. push & pop used by Stack, goBack used by all navigations
+
+### Passing Parameters
+1. Simple Parameters -> navigate(routeName, JSON Object of params)
+ex. Route Object -> Object {
+  "key": "Home_to_Details-TnybBl8V7ieXIZqkaGDoW", //unique per stack item
+  "name": "Home_to_Details", // user defined descriptive identifier
+  "params": Object {
+    "screenNumber": 1,
+  },
+}
+Params object is part of the properties Object passed from one screen to another

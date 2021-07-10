@@ -53,3 +53,6 @@ ex. Route Object -> Object {
   },
 }
 Params object is part of the properties Object passed from one screen to another
+
+### Stack Navigation Screen Options
+1. reactnative.dev

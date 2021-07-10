@@ -32,3 +32,11 @@
 1. Keep track of navigation using routes
 2. Path between screens is the route stored in a Route Object
 3. Use Descriptive route names
+
+
+### Routing
+1. moving to next screen -> Screen pushed onto Stack
+2. going back -> Screen popped off Stack
+3. moving to next screen -> Screen pushed onto Stack (new Instance, new key in Route Object)
+4. Does nothing if routing to it's own path like from Details to Details to Details
+5. Can be enforced using navigation.push()

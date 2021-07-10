@@ -27,3 +27,6 @@
 1. import { NavigationContainer } from '@react-navigation/native';
 2. Two ways to build navigation -> programmatically (react-native apis) vs declaratively (JSX)
 3. import { createStackNavigator } from '@react-navigation/stack';
+
+### Setup Stack Navigation
+1. Keep track of navigation using routes

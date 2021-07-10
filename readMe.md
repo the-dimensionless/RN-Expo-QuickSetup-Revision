@@ -56,3 +56,50 @@ Params object is part of the properties Object passed from one screen to another
 
 ### Stack Navigation Screen Options
 1. reactnative.dev
+2. navigation options
+3. Context
+4. Hooks
+5. Nesting Navigation
+6. Modal Dialogs
+7. Events and listeners
+8. Stack, Tab, Drawer
+
+### Built in gesture support
+1. (cross-platform) Button, Drawer, FlatList, Keyboard, Picker, ScrollView, Slider,
+Switch, Tab, TextInput
+
+### Touchable API
+1. TouchableOpacity
+2. TouchableHighlight
+3. TouchableWithoutFeedback
+4. TouchableNativeFeedback
+
+### Pressable API
+
+### Gesture Response Lifecycle
+1. Tap, Double Tap, Long Press, Force Press
+2. Pan, Scroll, Swipe
+3. Flick
+4. Pinch & Spread
+5. Drag
+6. Rotate
+
+Event -> Bubble Up onStartShouldSetResponder with callback.
+If any returns true, call onResponderGrant with callback,
+keep bubbling up if false.
+onResponderRelease with callback.
+onResponderReject with callback.
+
+onMoveShouldSetResponder
+
+
+### XMLHttpRequest (XHR) API
+1. Fetch, axios, superagent, etc
+2. XML and JSON exchange formats
+
+1. Create and init an XHR Object
+2. Send a Web API Request
+3. Process Response
+4. OMDB: Open Movie Database
+
+
